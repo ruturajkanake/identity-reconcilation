@@ -3,7 +3,7 @@ import { Table, Column, Model, DataType, CreatedAt, UpdatedAt, DeletedAt } from 
 @Table({
     tableName: "contact",
 })
-export default class Contact extends Model<Contact> {
+export default class Contact extends Model {
     @Column({
         type: DataType.INTEGER,
         allowNull: false,

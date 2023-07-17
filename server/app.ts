@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import { config } from 'dotenv';
 import bodyParser from 'body-parser';
 import connection from './config/connect';
+import { createContact } from './controllers/contact.controller';
 
 config();
 const app: Express = express();
@@ -14,6 +15,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json('Hello World!');
+});
+
+app.post('/identify', (req: Request, res: Response) => {
+    createContact(req, res);
 });
 
 connection.sync().then(() => {

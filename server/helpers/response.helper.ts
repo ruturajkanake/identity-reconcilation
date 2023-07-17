@@ -11,9 +11,8 @@ export const SUCCESS = (
 export const CREATE = (
     res: Response,
     data: unknown,
-    message: string
 ): Response => {
-    return res.status(201).json({ status: 'success', data, message });
+    return res.status(201).json(data);
 };
 
 export const BAD_REQUEST = (res: Response, data: unknown): Response => {
