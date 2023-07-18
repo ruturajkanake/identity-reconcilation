@@ -21,11 +21,14 @@ app.post('/identify', (req: Request, res: Response) => {
     createContact(req, res);
 });
 
-connection.sync().then(() => {
-    console.log('Database connected');
-}).catch((err) => {
-    console.log('Error connecting to database', err);
-});
+connection
+    .sync()
+    .then(() => {
+        console.log('Database connected');
+    })
+    .catch((err) => {
+        console.log('Error connecting to database', err);
+    });
 
 const port: number = parseInt(process.env.PORT!) || 3000;
 const server = app.listen(port, () =>

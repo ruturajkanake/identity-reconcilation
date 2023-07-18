@@ -8,10 +8,7 @@ export const SUCCESS = (
     return res.status(200).json({ status: 'success', data, message });
 };
 
-export const CREATE = (
-    res: Response,
-    data: unknown,
-): Response => {
+export const CREATE = (res: Response, data: unknown): Response => {
     return res.status(201).json(data);
 };
 

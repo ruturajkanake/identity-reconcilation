@@ -1,6 +1,6 @@
-import { Sequelize } from "sequelize-typescript";
-import Contact from "../models/contact.model";
-import { config } from "dotenv";
+import { Sequelize } from 'sequelize-typescript';
+import Contact from '../models/contact.model';
+import { config } from 'dotenv';
 
 config();
 

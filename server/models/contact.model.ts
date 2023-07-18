@@ -1,35 +1,43 @@
-import { Table, Column, Model, DataType, CreatedAt, UpdatedAt, DeletedAt } from 'sequelize-typescript';
+import {
+    Table,
+    Column,
+    Model,
+    DataType,
+    CreatedAt,
+    UpdatedAt,
+    DeletedAt
+} from 'sequelize-typescript';
 
 @Table({
-    tableName: "contact",
+    tableName: 'contact'
 })
 export default class Contact extends Model {
     @Column({
         type: DataType.INTEGER,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
+        primaryKey: true
     })
     id!: number;
 
     @Column({
-        type: DataType.STRING,
+        type: DataType.STRING
     })
     phoneNumber!: string;
 
     @Column({
-        type: DataType.STRING,
+        type: DataType.STRING
     })
     email!: string;
 
     @Column({
-        type: DataType.INTEGER,
+        type: DataType.INTEGER
     })
     linkedId!: number;
 
     @Column({
         type: DataType.ENUM('primary', 'secondary'),
-        defaultValue: 'primary',
+        defaultValue: 'primary'
     })
     linkPrecedence!: string;
 
