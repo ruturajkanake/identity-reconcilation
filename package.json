@@ -29,13 +29,17 @@
         "watch-node": "nodemon build/app.js",
         "lint": "eslint . --ext .ts",
         "prettier-format": "prettier --config .prettierrc 'server/**/*.ts' --write",
-        "start": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
-        "dev": "node build/app.js",
+        "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
+        "start": "node build/app.js",
         "postinstall": "tsc"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ruturajkanake/identity-reconcilation.git"
+    },
+    "engines": {
+        "node": "16.15.0",
+        "npm": "8.5.5"
     },
     "author": "Ruturaj Kanake",
     "license": "ISC",
