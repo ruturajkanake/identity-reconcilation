@@ -1,5 +1,5 @@
 # Identity Reconcilation
-This repository contains the backend code for Bitespeed identity reconciliation. The code is written in Typescript, uses [Express](https://expressjs.com/) as the web framework and [Sequlize](https://sequelize.org/) as the ORM. The database used is [MySQL](https://www.mysql.com/).
+This repository contains the backend code for Bitespeed identity reconciliation. The code is written in Typescript, uses [Express](https://expressjs.com/) as the web framework and [Sequlize](https://sequelize.org/) as the ORM. The database used is [MySQL](https://www.mysql.com/). The application is hosted on https://identity-reconciliation-3ae8819e2c92.herokuapp.com
 
 # Pre-requisites
 1. Install [Node.js](https://nodejs.org/en/download/)
