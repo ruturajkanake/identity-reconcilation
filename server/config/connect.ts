@@ -1,5 +1,8 @@
 import { Sequelize } from "sequelize-typescript";
 import Contact from "../models/contact.model";
+import { config } from "dotenv";
+
+config();
 
 const DB_NAME = process.env.DB_NAME || 'bitespeed';
 const DB_USER = process.env.DB_USER || 'root';
