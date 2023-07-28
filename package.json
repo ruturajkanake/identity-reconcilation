@@ -29,7 +29,7 @@
         "watch-node": "nodemon build/app.js",
         "lint": "eslint . --ext .ts",
         "prettier-format": "prettier --config .prettierrc 'server/**/*.ts' --write",
-        "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
+        "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
         "start": "node build/app.js",
         "postinstall": "tsc"
     },
