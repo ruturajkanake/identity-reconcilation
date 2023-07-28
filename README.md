@@ -10,7 +10,7 @@ This repository contains the backend code for Bitespeed identity reconciliation.
 1. Clone the repository
 2. Run `npm install` to install all the dependencies
 3. Create a database in MySQL
-4. Create a `.env` file in the root directory of the project and add the following variables:
+4. Create a `.env` file in the root directory of the project and update the credentials accordingly:
 ```
 PORT=3000
 NODE_ENV=dev
@@ -19,7 +19,7 @@ DB_USER=root
 DB_HOST=127.0.0.1
 DB_PASS=root
 ```
-5. Run `npm run start` to start the server
+5. Run `npm run dev` to start the server
 
 
 # Testing the API
