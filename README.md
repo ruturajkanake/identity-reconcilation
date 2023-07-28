@@ -16,7 +16,7 @@ PORT=3000
 NODE_ENV=dev
 DB_NAME=bitespeed
 DB_USER=root
-DB_HOST=localhost
+DB_HOST=127.0.0.1
 DB_PASS=root
 ```
 5. Run `npm run start` to start the server
